@@ -8,7 +8,7 @@ try:
   j = int(st.text_input('num2=',""))
 except:
     st.write("fill in numbers first")
-c1, c2, c3, c4 = st.columns(2)
+c1, c2, c3, c4 = st.columns(4)
 with c1:
   if(st.button('addition')):
     st.write(j,'+',i,'=',j+i)
