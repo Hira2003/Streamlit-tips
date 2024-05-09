@@ -8,16 +8,20 @@ try:
   j = int(st.text_input('num2=',""))
 except:
     st.write("fill in numbers first")
-if(st.button('addition')):
+c1, c2 = st.columns(2)
+with c1:
+  if(st.button('addition')):
     st.write(j,'+',i,'=',j+i)
     st.write(i,'+',j,'=',i+j)
-if(st.button('substraction')):
+
+  if(st.button('substraction')):
     st.write(j,'-',i,'=',j-i)
     st.write(i,'-',j,'=',i-j)
-if(st.button('multiplication')):
+with c2:
+ if(st.button('multiplication')):
     st.write(j,'*',i,'=',j*i)
     st.write(i,'*',j,'=',i*j)
-if(st.button('division')):
+ if(st.button('division')):
     st.write(j,'/',i,'=',j/i)
     st.write(i,'/',j,'=',i/j)
 
