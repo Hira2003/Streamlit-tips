@@ -2,6 +2,9 @@ import streamlit as st
 
 try:
   i = int(st.text_input('num1=',""))
+except:
+    st.write("fill in numbers first")
+try:
   j = int(st.text_input('num2=',""))
 except:
     st.write("fill in numbers first")
